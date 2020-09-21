@@ -9,9 +9,9 @@ services:
       protocol: tcp
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DB=petclinic
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password
+      - MYSQL_DB=${MYSQL_DB}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     volumes:
     - type: volume
       source: petdb-volume
@@ -24,9 +24,9 @@ services:
       published: 9966
       protocol: tcp
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://petdb:3306/petclinic?useUnicode=true
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=password
+      - SPRING_DATASOURCE_URL=${SPRING_DATASOURCE_URL}
+      - SPRING_DATASOURCE_USERNAME=${MYSQL_USER}
+      - SPRING_DATASOURCE_PASSWORD=${MYSQL_PASSWORD}
     depends_on:
       - petdb 
   frontend:
