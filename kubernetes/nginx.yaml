@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: wasimd/nginx
+        image: rwright1992/nginx
         ports:
         - containerPort: 80
         readinessProbe:

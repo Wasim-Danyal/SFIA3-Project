@@ -1,37 +1,19 @@
 version: '3.7'
 services:
-  petdb:
-    build: ./mysql
-    image: wasimd/mysql
-    ports:
-    - target: 3306
-      published: 3306
-      protocol: tcp
-    environment:
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - MYSQL_DB=petclinic
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=password
-    volumes:
-    - type: volume
-      source: petdb-volume
-      target: /var/lib/mysql
   backend:
     build: ./back-end
-    image: wasimd/backend
+    image: rwright1992/backend
     ports:
     - target: 9966
       published: 9966
       protocol: tcp
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://petdb:3306/petclinic?useUnicode=true
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=password
-    depends_on:
-      - petdb 
+      - SPRING_DATASOURCE_URL=jdbc:hsqldb:mem:petclinic
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=
   frontend:
     build: ./front-end
-    image: wasimd/frontend
+    image: rwright1992/frontend
     ports:
     - target: 4200
       published: 4200
@@ -40,7 +22,7 @@ services:
       - backend
   nginx:
     build: ./nginx
-    image: wasimd/nginx
+    image: rwright1992/nginx
     ports:
     - target: 80
       published: 80

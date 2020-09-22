@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: wasimd/backend
+        image: rwright1992/backend
         ports:
         - containerPort: 9966
 ---
