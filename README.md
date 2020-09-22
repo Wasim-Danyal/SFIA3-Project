@@ -2,22 +2,33 @@
 
 ## Contents 
 
-- [Project Brief](#Project-Brief)
-	* [Resources](#Resources)
-   * [Brief](#brief)
-- [Project Approach](#Project-Approach)
-- [Architecture](#Architecture)
-   * [Technologies](#Technologies)
-   * [CI Pipeline](#CI-Pipeline)
-   * [Infrastructure](#Infrastructure)
-   * [Risk Assessment](#Risk-Assessment)
-- [Pricing](#Pricing)
-- 
+- [SFIA3 Project](#sfia3-project)
+  - [Contents](#contents)
+- [Project Brief](#project-brief)
+    - [Resources](#resources)
+    - [Brief](#brief)
+- [Project Approach](#project-approach)
+  - [Architecture](#architecture)
+    - [Technologies](#technologies)
+        - [Docker](#docker)
+        - [Terraform](#terraform)
+        - [Jenkins](#jenkins)
+        - [Kubernetes](#kubernetes)
+        - [AWS](#aws)
+        - [GCP](#gcp)
+        - [NGINX](#nginx)
+    - [CI Pipeline](#ci-pipeline)
+    - [Terraform Infrastructure](#terraform-infrastructure)
+    - [Communications Diagram](#communications-diagram)
+    - [Flow Diagram](#flow-diagram)
+    - [Service Diagram](#service-diagram)
+    - [Risk Assessment](#risk-assessment)
+  - [Pricing](#pricing)
 # Project Brief
 
 ### Resources
-- Presentation:
-- Project Tracking:
+- Presentation: https://docs.google.com/presentation/d/1tvuw0aGp5gTRX3qS1x5JMbOMQaaJ4SjNRMDnN6zt6Pc/edit#slide=id.p
+- Project Tracking: https://wdprojects.atlassian.net/jira/software/projects/TP/boards/8/backlog
 
 ### Brief
 - The main project specification is to deploy the applications for the 'Sprint Pet Clinic Domain', one of which is the front end client using AngularJS and the other as an API using Java. The project is to be deployed using technologies we have learned.
