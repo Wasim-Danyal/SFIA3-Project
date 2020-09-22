@@ -18,7 +18,11 @@
 ### Resources
 - Presentation:
 - Project Tracking:
+
 ### Brief
+- The main project specification is to deploy the applications for the 'Sprint Pet Clinic Domain', one of which is the front end client using AngularJS and the other as an API using Java. The project is to be deployed using technologies we have learned.
+
+- The project is a group project so it will need to be designed and implemented in an agile environment with stand ups and scrum roles assigned to team members. These workflows need to be demonstrated and sicussed in the final presentation.
 
 # Project Approach
 
