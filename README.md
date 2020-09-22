@@ -23,6 +23,9 @@
 ### CI Pipeline
 ![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/T3-Project/docs/Documentation/CI%20Pipeline.png?token=AQHGWYRDJ7RI43KQPCV6N4C7NH35K)
 ### Infrastructure
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/T3-Project/docs/Documentation/infrastructure.png?token=AQHGWYXBOHS7ZALX6TQK5RS7NH4HU)
 ### Risk Assessment
 
 ## Pricing
+
+
