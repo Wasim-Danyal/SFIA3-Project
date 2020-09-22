@@ -46,9 +46,15 @@ GCP was the cloud provider which we used as a testing environment to ensure all 
 NGINX was a web server which was used as a reverse proxy to communicate from ports to services of the application.
 
 ### CI Pipeline
-![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/T3-Project/docs/Documentation/CI%20Pipeline.png)
-### Infrastructure
-![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/T3-Project/docs/Documentation/infrastructure.png)
+![CI pipeline](Images/CIpipeline.png)
+### Terraform Infrastructure
+![Terraform](Images/Communication.png)
+### Communications Diagram
+![Coomunications](Images/Flow.png)
+### Flow Diagram
+![Flow Diagram](Images/Infrastructure.png)
+### Service Diagram
+![Service Diagram](Images/Terraform.png)
 ### Risk Assessment
 https://docs.google.com/spreadsheets/d/1ugAB8bjxak-hNdU5zoV2xeDmLR60JVsaULNUSeTxHOk/edit#gid=0
 ## Pricing
