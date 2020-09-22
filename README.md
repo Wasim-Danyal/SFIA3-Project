@@ -31,7 +31,7 @@
 ### Technologies
 
 ##### Docker
-Docker was used to containerize services for the application, the services were containerised and pushed to a docker hub repository where they were pulled down to be used by kubernetes.
+Docker and Docker compose was used to build images the services and push to the DockerHub repository. Docker swarm was not used to deploy the application only to build the images.
 ##### Terraform
 Terraform is an infrastructure as code software. This was used to provision the network environment which was used to host the application. 
 ##### Jenkins
