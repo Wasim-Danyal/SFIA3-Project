@@ -1,10 +1,6 @@
 pipeline {
   agent any
   environment {
-    MYSQL_DB = credentials('MYSQL_DB')
-    MYSQL_USER = credentials('MYSQL_USER')
-    MYSQL_PASSWORD = credentials('MYSQL_PASSWORD')
-
     SPRING_DATASOURCE_URI = credentials('SPRING_DATASOURCE_URI')
     SPRING_DATASOURCE_USERNAME = credentials('SPRING_DATASOURCE_USERNAME')
     SPRING_DATASOURCE_PASSWORD = credentials('SPRING_DATASOURCE_PASSWORD')
@@ -35,6 +31,22 @@ pipeline {
       }
     }
 
-    stage(''){
+    stage('Build Docker Images'){
+      steps{
+        sh './scripts/docker-build.sh'
+      }
+    }
+
+    stage('Configue AWS'){
+      steps{
+        sh './scripts/aws-config.sh'
+      }
+    }
+
+    stage('Build Kubernetes Services'){
+      steps{
+        sh './scripts/kubernetes.sh'
+      }
+    }
   }
 }
