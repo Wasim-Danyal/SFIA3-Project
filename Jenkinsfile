@@ -37,9 +37,15 @@ pipeline {
       }
     }
 
-    stage('Configue AWS'){
+    //stage('Configue AWS'){
+    //  steps{
+    //    sh './scripts/aws-config.sh'
+    //  }
+    //}
+
+    stage('Build Terraform Network'){
       steps{
-        sh './scripts/aws-config.sh'
+        sh './scripts/terraform.sh'
       }
     }
 
