@@ -21,6 +21,7 @@
 ## Architecture
 ### Technologies
 ### CI Pipeline
+![enter image description here](https://raw.githubusercontent.com/Wasim-Danyal/T3-Project/docs/Documentation/CI%20Pipeline.png)
 ### Infrastructure
 ### Risk Assessment
 
