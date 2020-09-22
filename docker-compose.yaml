@@ -20,6 +20,8 @@ services:
       protocol: tcp
     depends_on:
       - backend
+    links:
+      - backend
   nginx:
     build: ./nginx
     image: rwright1992/nginx
