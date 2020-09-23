@@ -42,9 +42,3 @@ unzip chromedriver_linux64.zip
 rm chromedriver_linux64.zip
 export CHROME_BIN=/usr/bin/chromium-browser
 cd ..
-
-# install npm dependencies and angular cli
-cd front-end
-npm install
-npm install -g @angular/cli
-cd ..
