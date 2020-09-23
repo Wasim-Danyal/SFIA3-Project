@@ -36,9 +36,3 @@ sudo apt install nodejs
 
 # install chrome browser for testing
 sudo apt-get install -y chromium-browser
-cd front-end
-wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip
-rm chromedriver_linux64.zip
-export CHROME_BIN=/usr/bin/chromium-browser
-cd ..
