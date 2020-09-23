@@ -17,8 +17,9 @@ unzip terraform_0.13.3_linux_amd64.zip
 sudo mv terraform ./bin
 
 # install kubectl
-curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
 chmod +x ./kubectl
+sudo mv ./kubectl /usr/local/bin/kubectl 
 
 
 # install docker and docker-compose
