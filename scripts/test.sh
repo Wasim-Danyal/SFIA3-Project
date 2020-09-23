@@ -1,6 +1,7 @@
 #! /bin/bash
 
 # install npm
+sudo apt install nodejs
 sudo apt install npm -y
 sudo npm uninstall -g angular-cli @angular/cli
 sudo npm cache clean --force
