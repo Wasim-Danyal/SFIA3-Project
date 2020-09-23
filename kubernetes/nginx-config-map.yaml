@@ -9,7 +9,7 @@ data:
         location / {
           proxy_pass http://frontend:4200;
         }
-        location /petclinic/api/ {
+        location /petclinic/ {
           proxy_pass http://backend:9966/petclinic/api;
         }
     }
