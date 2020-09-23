@@ -10,6 +10,6 @@ data:
           proxy_pass http://frontend:4200;
         }
         location /petclinic/ {
-          proxy_pass http://backend:9966/petclinic/api;
+          proxy_pass http://backend:9966/petclinic/api/;
         }
     }
