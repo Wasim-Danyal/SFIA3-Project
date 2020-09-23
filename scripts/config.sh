@@ -32,5 +32,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # install npm and node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt install nodejs
-sudo apt install npm
+sudo apt-get install nodejs
