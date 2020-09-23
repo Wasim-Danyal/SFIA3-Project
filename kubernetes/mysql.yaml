@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: wasimd/mysql
+        image: rwright1992/mysql
         ports:
         - containerPort: 3306
 ---

@@ -43,12 +43,6 @@ pipeline {
     //  }
     //}
 
-    stage('Build Terraform Network'){
-      steps{
-        sh './scripts/terraform.sh'
-      }
-    }
-
     stage('Build Kubernetes Services'){
       steps{
         sh './scripts/kubernetes.sh'
