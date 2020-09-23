@@ -33,3 +33,18 @@ sudo chmod +x /usr/local/bin/docker-compose
 # install npm and node
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
+
+# install chrome browser for testing
+sudo apt-get install -y chromium-browser
+cd front-end
+wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+rm chromedriver_linux64.zip
+export CHROME_BIN=/usr/bin/chromium-browser
+cd ..
+
+# install npm dependencies and angular cli
+cd front-end
+npm install
+npm install -g @angular/cli
+cd ..
