@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker system prune
+docker system prune -f
 docker rmi $(docker images -a -q)
 export SPRING_DATASOURCE_URI="${SPRING_DATASOURCE_URI}"
 export SPRING_DATASOURCE_USERNAME="${SPRING_DATASOURCE_USERNAME}"
