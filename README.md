@@ -25,7 +25,6 @@
     - [Risk Assessment](#risk-assessment)
   - [Pricing](#pricing)
 # Project Brief
-
 ### Resources
 - Presentation: https://docs.google.com/presentation/d/1tvuw0aGp5gTRX3qS1x5JMbOMQaaJ4SjNRMDnN6zt6Pc/edit#slide=id.p
 - Project Tracking: https://wdprojects.atlassian.net/jira/software/projects/TP/boards/8/backlog
