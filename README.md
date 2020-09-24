@@ -77,3 +77,4 @@ NGINX was a web server which was used as a reverse proxy to communicate from por
 ### Risk Assessment
 https://docs.google.com/spreadsheets/d/1ugAB8bjxak-hNdU5zoV2xeDmLR60JVsaULNUSeTxHOk/edit#gid=0
 ## Pricing
+![Service Diagram](Images/cost.PNG)
