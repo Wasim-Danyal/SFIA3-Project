@@ -37,3 +37,8 @@ sudo apt install nodejs
 
 # install chrome browser for testing
 sudo apt-get install -y chromium-browser
+
+# export env variables
+export SPRING_DATASOURCE_URI=${SPRING_DATASOURCE_URI}
+export SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
+export SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
