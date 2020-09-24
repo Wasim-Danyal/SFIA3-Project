@@ -1,7 +1,6 @@
 # SFIA3 Project
 
 ## Contents 
-
 - [SFIA3 Project](#sfia3-project)
   - [Contents](#contents)
 - [Project Brief](#project-brief)
