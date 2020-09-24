@@ -31,11 +31,11 @@ pipeline {
       }
     }
 
-    stage('Build Docker Images'){
-      steps{
-        sh './scripts/docker-build.sh'
-      }
-    }
+    //stage('Build Docker Images'){
+    //  steps{
+    //    sh './scripts/docker-build.sh'
+    //  }
+    //}
 
     //stage('Configue AWS'){
     //  steps{
