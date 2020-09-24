@@ -31,17 +31,17 @@ pipeline {
       }
     }
 
-    //stage('Build Docker Images'){
-    //  steps{
-    //    sh './scripts/docker-build.sh'
-    //  }
-    //}
+    stage('Build Docker Images'){
+      steps{
+        sh './scripts/docker-build.sh'
+      }
+    }
 
-    //stage('Configue AWS'){
-    //  steps{
-    //    sh './scripts/aws-config.sh'
-    //  }
-    //}
+    stage('Configue AWS'){
+      steps{
+        sh './scripts/aws-config.sh'
+      }
+    }
 
     stage('Build Kubernetes Services'){
       steps{
