@@ -49,9 +49,7 @@
 ## Architecture
 
 ### Technologies
- 
- 
- 
+
 ##### Docker
 Docker and Docker compose was used to build images the services and push to the DockerHub repository. Docker swarm was not used to deploy the application.
 ##### Terraform
@@ -66,6 +64,7 @@ AWS is the cloud provider used to deploy the application in the production envir
 GCP was the cloud provider which we used as a testing environment to ensure all components of the application worked with each other when it was deployed.
 ##### NGINX
 NGINX was a web server which was used as a reverse proxy to communicate from ports to services of the application.
+
 
 ### CI Pipeline
 ![CI pipeline](Images/CIpipeline.png)
