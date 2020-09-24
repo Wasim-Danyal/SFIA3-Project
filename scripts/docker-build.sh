@@ -7,6 +7,7 @@ export SPRING_DATASOURCE_USERNAME="${SPRING_DATASOURCE_USERNAME}"
 export SPRING_DATASOURCE_PASSWORD="${SPRING_DATASOURCE_PASSWORD}"
 ls
 sleep 10
+docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
 cd back-end
 docker build -t rwright1992/backend:latest .
 docker push rwright1992/backend:latest
@@ -19,5 +20,3 @@ cd nginx
 docker build -t rwright1992/nginx:latest .
 docker push rwright1992/nginx:latest
 cd ..
-docker login -u "${DOCKER_USERNAME}" -p "${DOCKER_PASSWORD}"
-docker-compose push
