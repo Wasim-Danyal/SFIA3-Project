@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+  backend:
+    build: ./back-end
+    image: rwright1992/backend
+    ports:
+    - target: 9966
+      published: 9966
+      protocol: tcp
+    environment:
+    - SPRING_DATASOURCE_URL=${SPRING_DATASOURCE_URI}
+    - SPRING_DATASOURCE_USERNAME=${SPRING_DATASOURCE_USERNAME}
+    - SPRING_DATASOURCE_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
+  frontend:
+    build: ./front-end
+    image: rwright1992/frontend
+    ports:
+    - target: 4200
+      published: 4200
+      protocol: tcp
+    depends_on:
+      - backend
+    links:
+      - backend
+  nginx:
+    build: ./nginx
+    image: rwright1992/nginx
+    ports:
+    - target: 80
+      published: 80
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: ./nginx/nginx.conf
+      target: /etc/nginx/nginx.conf
+    depends_on:
+    - backend
+    - frontend
+
+volumes:
+  petdb-volume:
