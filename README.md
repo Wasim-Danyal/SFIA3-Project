@@ -50,7 +50,6 @@
 
 ### Technologies
 
-
 ##### Docker
 Docker and Docker compose was used to build images the services and push to the DockerHub repository. Docker swarm was not used to deploy the application.
 ##### Terraform
