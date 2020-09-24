@@ -1,0 +1,64 @@
+[m[1mNAME[m
+    gcloud container clusters - deploy and teardown Google Kubernetes Engine
+        clusters
+
+[m[1mSYNOPSIS[m
+    [1mgcloud container clusters[m [4mCOMMAND[m [[1m--region[m=[4mREGION[m | [1m--zone[m=[4mZONE[m, [1m-z[m [4mZONE[m]
+        [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    The gcloud container clusters command group lets you deploy and teardown
+    Google Kubernetes Engine clusters.
+
+    See $ gcloud docker --help for information about deploying docker images to
+    clusters.
+
+[m[1mFLAGS[m
+     At most one of these may be specified:
+
+       [1m--region[m=[4mREGION[m
+          Compute region (e.g. us-central1) for the cluster.
+
+       [1m--zone[m=[4mZONE[m, [1m-z[m [4mZONE[m
+          Compute zone (e.g. us-central1-a) for the cluster. Overrides the
+          default [1mcompute/zone[m property value for this command invocation.
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --account, --configuration,
+    --flatten, --format, --help, --log-http, --project, --quiet, --trace-token,
+    --user-output-enabled, --verbosity. Run [1m$ gcloud help[m for details.
+
+[m[1mCOMMANDS[m
+    [1m[1;4mCOMMAND[1m[m is one of the following:
+
+     [1mcreate[m
+        Create a cluster for running containers.
+
+     [1mdelete[m
+        Delete an existing cluster for running containers.
+
+     [1mdescribe[m
+        Describe an existing cluster for running containers.
+
+     [1mget-credentials[m
+        Fetch credentials for a running cluster.
+
+     [1mlist[m
+        List existing clusters for running containers.
+
+     [1mresize[m
+        Resizes an existing cluster for running containers.
+
+     [1mupdate[m
+        Update cluster settings for an existing container cluster.
+
+     [1mupgrade[m
+        Upgrade the Kubernetes version of an existing container cluster.
+
+[m[1mNOTES[m
+    These variants are also available:
+
+        $ gcloud alpha container clusters
+        $ gcloud beta container clusters
+
+[m
