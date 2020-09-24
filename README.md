@@ -36,6 +36,14 @@
 - The project is a group project so it will need to be designed and implemented in an agile environment with stand ups and scrum roles assigned to team members. These workflows need to be demonstrated and discussed in the final presentation.
 
 # Project Approach
+## Project Workflow:
+- Methodology: AGILE
+- As we deploy the application we will needed to incorporate AGILE principles to simulate what a working environment. These are the events we followed to ensure we are in the right path:
+1. Daily Scrum: Morning 9am and 3.30pm afternoon to update our colleagues of our progress.
+2. Sprint planning: Where the entire Scrum team will start to prepare of what is needed for our next Sprint, in our case we only have 1 sprint. (Product backlog and Sprint backlog)
+3. Sprint: A time framed box where the goals mentioned in the sprint planning must be accomplished.
+4. Sprint Reviews: Informal meeting where the team will present their work and discuss feedback
+5.Sprint Retrospective: A meeting with the entire Scrum team and refelct on the sprint and establish any imporvements for the next.
 
 ## Architecture
 
